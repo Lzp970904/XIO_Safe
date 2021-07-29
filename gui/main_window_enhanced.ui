@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>978</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(9, 13, 31);
+color: rgb(85, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="10,0,2,150,0">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="titlelabel">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+font: 29pt &quot;宋体&quot;;
+color: rgb(225, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>西奥电梯智能安全监测系统</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="indent">
+       <number>0</number>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::NoTextInteraction</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(35, 35, 40);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_1" stretch="7,3">
+      <property name="spacing">
+       <number>15</number>
+      </property>
+      <property name="leftMargin">
+       <number>15</number>
+      </property>
+      <property name="rightMargin">
+       <number>15</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_1">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(9, 13, 31);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2" stretch="25,9">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <property name="bottomMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="7,100">
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_1" stretch="1,1,1,1,1,10">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <property name="sizeConstraint">
+              <enum>QLayout::SetFixedSize</enum>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+              <widget class="QPushButton" name="pushButton_1">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>65</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>70</width>
+                 <height>33</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(198, 198, 198);
+font: 8pt &quot;宋体&quot;;
+background-color: rgb(66, 66, 66);
+selection-background-color: rgb(45, 45, 45);
+color: rgb(85, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>萨瓦尼尼-2</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                 <horstretch>1</horstretch>
+                 <verstretch>1</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>65</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>70</width>
+                 <height>33</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(198, 198, 198);
+font: 8pt &quot;宋体&quot;;
+background-color: rgb(66, 66, 66);
+selection-background-color: rgb(45, 45, 45);
+color: rgb(85, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>普玛宝轿壁线</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>65</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>70</width>
+                 <height>33</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(198, 198, 198);
+font: 8pt &quot;宋体&quot;;
+background-color: rgb(66, 66, 66);
+selection-background-color: rgb(45, 45, 45);
+color: rgb(85, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>普玛宝激光线</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+              <widget class="QPushButton" name="pushButton_4">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>65</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>70</width>
+                 <height>33</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(198, 198, 198);
+font: 8pt &quot;宋体&quot;;
+background-color: rgb(66, 66, 66);
+selection-background-color: rgb(45, 45, 45);
+color: rgb(85, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>通用线2-折2</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+              <widget class="QPushButton" name="pushButton_5">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>65</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>70</width>
+                 <height>33</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(198, 198, 198);
+font: 8pt &quot;宋体&quot;;
+background-color: rgb(66, 66, 66);
+selection-background-color: rgb(45, 45, 45);
+color: rgb(85, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>萨瓦尼尼-1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="videoLabel_1">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(20, 24, 41);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="videoLabel_2">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(20, 24, 41);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="videoLabel_3">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(20, 24, 41);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="videoLabel_4">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(20, 24, 41);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="videoLabel_5">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(20, 24, 41);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(25, 25, 25);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3" stretch="9,51,9,51">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="logTitle">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(9, 13, 31);
+font: 22pt &quot;宋体&quot;;
+color: rgb(200, 200, 200);
+color: rgb(90, 174, 242);
+color: rgb(85, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>实时检测信息</string>
+           </property>
+           <property name="indent">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextBrowser" name="textBrowser">
+           <property name="styleSheet">
+            <string notr="true">gridline-color: rgb(25, 25, 25);
+font: 16pt &quot;宋体&quot;;
+background-color: rgb(20, 24, 41);
+border-color: rgb(25, 25, 25);
+color: rgb(200, 200, 200);</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="recordTitle">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(9, 13, 31);
+font: 22pt &quot;宋体&quot;;
+color: rgb(200, 200, 200);
+color: rgb(90, 174, 242);
+color: rgb(85, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>异常记录</string>
+           </property>
+           <property name="indent">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_3">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(9, 13, 31);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>8</number>
+            </property>
+            <property name="topMargin">
+             <number>8</number>
+            </property>
+            <property name="rightMargin">
+             <number>8</number>
+            </property>
+            <property name="bottomMargin">
+             <number>8</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="recordLabel">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(20, 24, 41);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="Line" name="line_2">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(35, 35, 40);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>978</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+selection-background-color: rgb(100, 100, 100);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <widget class="QMenu" name="processMenu">
+    <property name="title">
+     <string>程序</string>
+    </property>
+    <addaction name="start"/>
+    <addaction name="stop"/>
+   </widget>
+   <widget class="QMenu" name="viewMenu">
+    <property name="title">
+     <string>显示</string>
+    </property>
+    <addaction name="fullScreen"/>
+    <addaction name="exitFullScreen"/>
+   </widget>
+   <widget class="QMenu" name="setupMenu">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="openConfigFile"/>
+   </widget>
+   <widget class="QMenu" name="streamMenu">
+    <property name="title">
+     <string>视频流</string>
+    </property>
+    <addaction name="stream_1"/>
+    <addaction name="stream_2"/>
+    <addaction name="stream_3"/>
+    <addaction name="stream_4"/>
+    <addaction name="stream_5"/>
+   </widget>
+   <widget class="QMenu" name="statisticsMenu">
+    <property name="title">
+     <string>统计</string>
+    </property>
+    <addaction name="openStatistics"/>
+   </widget>
+   <addaction name="processMenu"/>
+   <addaction name="streamMenu"/>
+   <addaction name="viewMenu"/>
+   <addaction name="statisticsMenu"/>
+   <addaction name="setupMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <action name="fullScreen">
+   <property name="text">
+    <string>全屏模式</string>
+   </property>
+  </action>
+  <action name="start">
+   <property name="text">
+    <string>运行</string>
+   </property>
+  </action>
+  <action name="stop">
+   <property name="text">
+    <string>终止</string>
+   </property>
+  </action>
+  <action name="openConfigFile">
+   <property name="text">
+    <string>打开配置文件</string>
+   </property>
+  </action>
+  <action name="stream_1">
+   <property name="text">
+    <string>萨瓦尼尼-1</string>
+   </property>
+  </action>
+  <action name="stream_2">
+   <property name="text">
+    <string>萨瓦尼尼-2</string>
+   </property>
+  </action>
+  <action name="stream_3">
+   <property name="text">
+    <string>专机下线</string>
+   </property>
+  </action>
+  <action name="stream_4">
+   <property name="text">
+    <string>喷粉上线</string>
+   </property>
+  </action>
+  <action name="stream_5">
+   <property name="text">
+    <string>薄板通用</string>
+   </property>
+  </action>
+  <action name="exitFullScreen">
+   <property name="text">
+    <string>退出全屏</string>
+   </property>
+  </action>
+  <action name="openStatistics">
+   <property name="text">
+    <string>异常情况统计与可视化</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

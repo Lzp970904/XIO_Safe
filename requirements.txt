@@ -1,0 +1,13 @@
+tqdm
+opcua
+opencv-python
+numpy
+torch>=0.4.0
+torchvision
+pillow
+PyQt5
+cryptography
+wxpy
+pymysql
+serial
+matplotlib

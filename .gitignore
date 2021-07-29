@@ -1,0 +1,11 @@
+
+.idea/
+*.pyc
+*.weights
+*.log
+images/records/
+*.avi
+*.mp4
+
+# Project exclude paths
+/venv/
